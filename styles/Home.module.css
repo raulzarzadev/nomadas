@@ -1,11 +1,40 @@
 .container {
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0070f3;
+  padding: 8px;
+}
+
+.header__item {
+  display: flex;
+}
+
+.nav {
+  min-width: 300px;
+}
+
+.nav__list {
+  background-color: beige;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__list_link {
+  border: 1px solid;
+}
+
+
 
 .main {
   padding: 5rem 0;
