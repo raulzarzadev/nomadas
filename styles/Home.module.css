@@ -8,22 +8,28 @@
 }
 
 .header {
+  position: fixed;
+  z-index: 100;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  background-color: #0070f3;
   padding: 8px;
+  margin-bottom: -4.5rem;
+  background: linear-gradient(180deg, rgba(187, 183, 255, 1) 0%, rgba(4, 4, 4, 1) 0%, rgba(157, 158, 158, 0) 100%);
 }
 
 .header__item {
   display: flex;
+  color: var(--text-secondary);
 }
 
 .nav {
   min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .nav__list {
-  background-color: beige;
   list-style: none;
   padding: 0;
   display: flex;
@@ -31,7 +37,7 @@
 }
 
 .nav__list_link {
-  border: 1px solid;
+  color: inherit;
 }
 
 
@@ -45,13 +51,156 @@
   align-items: center;
 }
 
-.footer {
+
+.background_image {
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+/* VISUAL GUIDE START*/
+.guide {
+  min-height: 200px;
+  min-width: 200px;
+  padding: var(--space1);
+  border-radius: var(--space1);
+  box-shadow: var(--box-shadow2);
+  background-color: var(--text-secondary);
+}
+
+.guide__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 8px;
+  background-color: var(--disabled);
+}
+
+.guide__grid_item {
+  background-color: #fff;
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  min-height: 50px;
+  padding: var(--space1);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  min-width: 60px;
+  min-height: 35px;
+  border: 1px solid var(--text-primary);
+  border-radius: var(--space1);
+  padding: var(--space1/2);
+}
+
+/* VISUAL GUIDE END*/
+
+/* LINK start */
+.link {
+  border-radius: var(--space1);
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  padding: var(--space1);
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* LINK end */
+
+/* BUTTON START */
+/* primary button */
+.btn {
+  border: 1px solid transparent;
+  background-color: var(--primary);
+  min-width: 60px;
+  min-height: 25px;
+  border-radius: var(--space1);
+  padding: var(--space1);
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: radial-gradient(circle, rgb(226, 224, 255) 0%, rgba(204, 247, 255, 1) 100%, rgb(255, 255, 255) 100%);
+  opacity: 1;
+
+}
+
+.btn:focus {
+  background-color: var(--secondary);
+}
+
+.btn:active {
+  background-color: var(--primary);
+}
+
+/* secondary button */
+.btn_secondary {
+  box-shadow: var(--box-shadow);
+  min-width: 60px;
+  min-height: 25px;
+  border-radius: var(--space1);
+  padding: var(--space1);
+  border: 1px solid;
+  opacity: 0.7;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn_secondary:hover {
+  background: rgb(187, 183, 255);
+  background: radial-gradient(circle, rgb(226, 224, 255) 0%, rgba(204, 247, 255, 1) 100%, rgb(255, 255, 255) 100%);
+  opacity: 1;
+
+}
+
+.btn_secondary:focus {
+  background-color: var(--secondary);
+}
+
+.btn_secondary:active {
+  background-color: var(--primary);
+}
+
+.btn:hover {
+  background: rgb(187, 183, 255);
+  background: radial-gradient(circle, rgb(226, 224, 255) 0%, rgba(204, 247, 255, 1) 100%, rgb(255, 255, 255) 100%);
+  opacity: 1;
+
+}
+
+.btn:focus {
+  background-color: var(--secondary);
+}
+
+.btn:active {
+  background-color: var(--primary);
+}
+
+/* BUTTON END */
+
+
+
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  border-top: 1px solid var(--secondary);
+  background-color: var(--text-primary);
+  color: var(--text-secondary);
+  text-align: center;
 }
 
 .footer img {

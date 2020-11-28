@@ -13,6 +13,28 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0
+}
+
 * {
   box-sizing: border-box;
+}
+
+:root {
+  /* palette */
+  --primary: #aba554;
+  --secondary: #3581c9;
+  --text-primary: #424242;
+  --text-secondary: #d6d4d1;
+  --disabled: #d6d4d1;
+  --rgb-primary: rgb(171, 165, 84);
+  /* spaicing */
+  --space1: 8px;
+  --space2: 16px;
+  --space3: 24px;
+  --space4: 32px;
+  /*shadows */
+  --box-shadow: var(--text-primary) 3px 2px 6px 0;
+  --box-shadow2: var(--text-primary) 6px 4px 12px 0;
 }
