@@ -6,15 +6,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <Image
-        priority
-        src={"/main-background.jpg"}
-        alt="background image"
-        className={styles.background_image}
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
+     
       <Head>
         <title>nomadas creando el camino</title>
         <link rel="icon" href="/favicon.ico" />

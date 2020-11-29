@@ -14,7 +14,9 @@ export default function MyLayout({ children }) {
       <section>
         <header className={styles.header}>
           <div className={styles.header__item}>
-            <Image src="/favicon.ico" alt="img" width="24" height="24" />
+            <div className={styles.header__logo}>
+              <Image src="/favicon.ico" alt="img" width="100%" height="100%" />
+            </div>
           </div>
           <div className={styles.header__item}>
             <nav className={styles.nav}>
@@ -35,10 +37,16 @@ export default function MyLayout({ children }) {
       </section>
 
       <main className={styles.main}>
-        <section className={styles.container}>
-         
-          {children}
-        </section>
+        <Image
+          priority
+          src={"/main-background.jpg"}
+          alt="background image"
+          className={styles.background_image}
+          layout="fill"
+          objectFit="cover"
+          quality={50}
+        />
+        <section className={styles.container}>{children}</section>
       </main>
       <footer className={styles.footer}>
         <nav className={styles.nav}>
