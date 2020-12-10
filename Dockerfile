@@ -1,4 +1,5 @@
-FROM raulzarza/nomadas
+FROM node:slim
+
 
 # Create app direcotiy
 
@@ -7,7 +8,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Installing dependencies
-COPY package*.json /usr/src/app/
+COPY package.json /usr/src/app/
 COPY yarn.lock /usr/src/app/
 
 RUN yarn
@@ -16,7 +17,7 @@ RUN yarn
 COPY . /usr/src/app
 
 # Building app
-RUN yarn run build
+RUN yarn build
 
 EXPOSE 3000
 

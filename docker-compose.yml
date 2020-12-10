@@ -1,9 +1,7 @@
-version: "3.3"
+version: "3.8"
 
 services:
   nomadas:
-    container_name: nomadasexpress
-    restart: always
     build: .
     ports:
       - "3000:3000"

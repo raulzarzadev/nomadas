@@ -7,6 +7,6 @@ services:
     restart: always
     build: .
     ports:
-      - "3000:3000"
+      - "4012:3000"
     volumes:
       - .:/usr/src/app
