@@ -23,4 +23,4 @@ EXPOSE 3000
 
 #Running the app
 
-CMD "yarn" "run" "dev"
+CMD "yarn" "dev"

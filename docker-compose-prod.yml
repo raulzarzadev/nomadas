@@ -1,12 +1,10 @@
 version: "3.3"
 
 services:
-  nomadas:
-    image: raulzarza/nomadas:v0.2.1
-    container_name: nomadasexpress
+  nextjs:
     restart: always
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile-prod
     ports:
-      - "4012:3000"
-    volumes:
-      - .:/usr/src/app
+      - "80:80"
