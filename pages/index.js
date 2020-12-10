@@ -9,7 +9,6 @@ export default function Home() {
      
       <Head>
         <title>nomadas creando el camino</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <h2>nomadasGroup pronto estara aquí</h2>

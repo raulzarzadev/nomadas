@@ -9,7 +9,7 @@ export default function VisualGuide() {
   return (
     <>
       <Head>
-        <title>nomadasgroup-guía viusal</title>
+        <title>guía viusal</title>
       </Head>
       <div className={styles.guide}>
         <h1>Guia visual</h1>

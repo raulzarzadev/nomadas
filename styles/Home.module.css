@@ -5,6 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: var(--space4);
+  position: relative;
+  z-index: 10;
 }
 
 .header {
@@ -21,13 +24,13 @@
 .header__item {
   display: flex;
   align-items: center;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
-.header__logo {
-  width: 50px;
-  height: 50px;
-}
+/* .header__logo {
+  width: 120px;
+  height: 70px;
+} */
 
 /* NAV MENU start */
 

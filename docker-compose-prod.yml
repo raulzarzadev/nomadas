@@ -2,6 +2,7 @@ version: "3.3"
 
 services:
   nomadas:
+    image: raulzarza/nomadas:v0.2.1
     container_name: nomadasexpress
     restart: always
     build: .

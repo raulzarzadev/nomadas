@@ -9,13 +9,19 @@ export default function MyLayout({ children }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon" />
+        <link rel="icon" href="/NOMADA-BLANCO.ico" />
       </Head>
       <section>
         <header className={styles.header}>
           <div className={styles.header__item}>
             <div className={styles.header__logo}>
-              <Image src="/favicon.ico" alt="img" width="100%" height="100%" />
+              <Image
+                src="/images/negro.png"
+                objectFit="contain"
+                alt="img"
+                width={140}
+                height={80}
+              />
             </div>
           </div>
           <div className={styles.header__item}>
@@ -39,7 +45,7 @@ export default function MyLayout({ children }) {
       <main className={styles.main}>
         <Image
           priority
-          src={"/main-background.jpg"}
+          src={"/images/NOMADAFLECHAS_BLANCO.png"}
           alt="background image"
           className={styles.background_image}
           layout="fill"
@@ -65,6 +71,15 @@ export default function MyLayout({ children }) {
             </li>
           </ul>
         </nav>
+        <div>
+          <Image
+            src="/images/negro.png"
+            objectFit="contain"
+            alt="img"
+            width={140}
+            height={80}
+          />
+        </div>
         <div>
           <p>
             Sitio creado por:{" "}

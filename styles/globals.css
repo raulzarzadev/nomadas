@@ -23,10 +23,10 @@ p {
 
 :root {
   /* palette */
-  --primary: #aba554;
-  --secondary: #3581c9;
-  --text-primary: #424242;
-  --text-secondary: #d6d4d1;
+  --primary: #325371;
+  --secondary: #77b9e6;
+  --text-primary: #000;
+  --text-secondary: #40709D;
   --disabled: #d6d4d1;
   --rgb-primary: rgb(171, 165, 84);
   /* spaicing */
