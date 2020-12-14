@@ -10,8 +10,12 @@ export default function VisualGuideGrid() {
         <h1>Guia visual</h1>
         <div className={styles.guide__grid}>
           <div className={styles.guide__grid_item}>
-            <MyLink variant="primary" href="" title="Primary Link" />
             <MyLink variant="secondary" href="" title="Secondary Link" />
+          </div>
+          <div className={styles.guide__grid_item}>
+            <div>
+              <MyLink variant="primary" href="" title="Primary Link" /> <br />
+            </div>
           </div>
           <div className={styles.guide__grid_item}>
             <button className="btn">Nomada button</button>
@@ -31,13 +35,15 @@ export default function VisualGuideGrid() {
             </div>
           </div>
           <div className={styles.guide__grid_item}>
-            <CardBlackSection />
+            <CardBlackSection
+              image="/images/balandra.jpg"
+              title="Card de prueba"
+              description="Ex aute pariatur voluptate do ullamco. wecwecwec cew  creev reerv  ecwwe cwe cwe dew edwed"
+              details="Dolore culpa aliqua non enim non veniam nostrud elit esse excepteur in consectetur. Consectetur labore ex laborum et ex occaecat. Eiusmod exercitation elit labore labore voluptate ea cupidatat commodo commodo nisi officia."
+              linkPrimary={{ href: "/", title: "conocenos" }}
+              linkSecondary={{ href: "/", title: "llamanos" }}
+            />
           </div>
-          <div className={styles.guide__grid_item}></div>
-          <div className={styles.guide__grid_item}></div>
-          <div className={styles.guide__grid_item}></div>
-          <div className={styles.guide__grid_item}></div>
-          <div className={styles.guide__grid_item}></div>
           <div className={styles.guide__grid_item}></div>
         </div>
       </div>

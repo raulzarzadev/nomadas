@@ -17,9 +17,7 @@ export default function MyLink({ variant, href, title }) {
   }
   return (
     <Link href={href || ""}>
-      <h6>
-        <a className={style || styles.link__primary}>{title || "link"}</a>
-      </h6>
+      <a className={style || styles.link__primary}>{title || "link"}</a>
     </Link>
   );
 }

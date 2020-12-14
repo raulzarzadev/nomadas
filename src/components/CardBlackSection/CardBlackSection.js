@@ -2,30 +2,54 @@ import React from "react";
 import Image from "next/image";
 import style from "./style.module.css";
 import MyLink from "../MyLink";
-export default function CardBlackSection() {
+export default function CardBlackSection({
+  title = "title",
+  description = "description",
+  details = "details",
+  linkPrimary,
+  linkSecondary,
+  image,
+}) {
   return (
     <div className={style.card}>
       <div className={style.card__image}>
         <Image
           className={style.card__image}
-          src={"/images/balandra.jpg"}
+          src={image || "/"}
           objectFit="cover"
-          alt={"image"}
+          alt={"card-image"}
           height="300"
           width="300"
         />
       </div>
       <div className={style.card__content}>
-        <div className={style.card__content_link}>card link</div>
-        <div className={style.card__content_title}>title card</div>
-        <div className={style.card__content_description}>description card</div>
-      </div>
-      <div className={style.card__details}>
-        Sit aute non amet nisi culpa id reprehenderit enim.re reprehenderit.
-        Officia eiusmod anim Lorem cillum do.
-        <div className={style.card__action}>
-          <MyLink title="primary link" />
-          <MyLink title="secondary link" variant="secondary" />
+        <div className={style.card__content_resume}>
+          <div className={style.card__content_resume_title}>{title}</div>
+          <div className={style.card__content_resume_description}>
+            {description.length > 80
+              ? description.slice(0, 80) + "..."
+              : description}
+          </div>
+          <div className={style.card__content_resume_icons}>
+            <div>icono tours</div>
+            <div>icono hosp</div>
+            <div>icono eco</div>
+          </div>
+        </div>
+        <div className={style.card__content_details}>
+          {details.length > 120 ? details.slice(0, 100) + "..." : details}
+          <div className={style.card__content_details_actions}>
+            {linkPrimary && (
+              <MyLink title={linkPrimary.title} href={linkPrimary.href} />
+            )}
+            {linkSecondary && (
+              <MyLink
+                title={linkSecondary.title}
+                href={linkSecondary.href}
+                variant="secondary"
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

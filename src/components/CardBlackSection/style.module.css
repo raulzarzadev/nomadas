@@ -9,46 +9,59 @@
     height: 180px;
 }
 
-.card__details {
-    padding: var(--space2);
+.card__content_details {
     display: none;
-    height: 180px;
-
 }
 
-.card:hover .card__details {
+.card__content_resume {
     display: block;
 }
 
-.card:hover .card__content {
+.card:hover .card__content_resume {
     display: none;
 }
 
-
-
-
-
-
+.card:hover .card__content_details {
+    display: block;
+}
 
 .card__image {
     border-radius: var(--space2) var(--space2) 0 0;
 }
 
-.card__content_link {
+.card__content_resume_link {
     text-align: end;
 }
 
-.card__content_title {
-    font-size: 2rem;
+.card__content_resume_title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space1);
 }
 
-.card__content_description {
-    font-size: 1.2rem;
+.card__content_resume_description {
+    font-size: 1rem;
 }
 
-.card__action {
+.card__content_resume_icons {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.card__content_resume_icons div{
+    border:solid 1px;
+    border-radius: var(--space1);
+    width: 60px;
+    height: 60px;
+}
+
+.card__content_details_actions {
     width: 100%;
     min-height: 70px;
+    margin: var(--space1) 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
