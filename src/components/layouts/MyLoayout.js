@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import styles from "../../../styles/Home.module.css";
-import MyLink from "../MyLink";
 import Image from "next/image";
+import MyLink from "../MyLink";
 
 export default function MyLayout({ children }) {
   return (
@@ -28,13 +28,13 @@ export default function MyLayout({ children }) {
             <nav className={styles.nav}>
               <ul className={styles.nav__list}>
                 <li className={styles.nav__list_link}>
-                  <MyLink href="/">home</MyLink>
+                  <MyLink href="/" title="home" />
                 </li>
                 <li className={styles.nav__list_link}>
-                  <MyLink href="/about">acerca de </MyLink>
+                  <MyLink href="/about" title="acerca de " />
                 </li>
                 <li className={styles.nav__list_link}>
-                  <MyLink href="/contact">contacto</MyLink>
+                  <MyLink href="/contact" title="contacto" />
                 </li>
               </ul>
             </nav>
@@ -58,16 +58,16 @@ export default function MyLayout({ children }) {
         <nav className={styles.nav}>
           <ul className={styles.nav__list}>
             <li className={styles.nav__list_link}>
-              <MyLink href="/">home</MyLink>
+              <MyLink href="/" title="home" />
             </li>
             <li className={styles.nav__list_link}>
-              <MyLink href="/about">acerca de </MyLink>
+              <MyLink href="/about" title="acerca de " />
             </li>
             <li className={styles.nav__list_link}>
-              <MyLink href="/contact">contacto </MyLink>
+              <MyLink href="/contact" title="contacto " />
             </li>
             <li className={styles.nav__list_link}>
-              <MyLink href="/visual-guide">guia visual</MyLink>
+              <MyLink href="/visual-guide" title="guia visual" />
             </li>
           </ul>
         </nav>
@@ -84,7 +84,7 @@ export default function MyLayout({ children }) {
           <p>
             Sitio creado por:{" "}
             <address>
-              <MyLink href="https://raulzarza.com">Raúl Zarza</MyLink>
+              <MyLink href="https://raulzarza.com" title="Raúl Zarza"></MyLink>
               <dd style={{ display: "none" }}>
                 Esta es la dirección del creador de esta web page
               </dd>

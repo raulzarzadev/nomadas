@@ -6,7 +6,45 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+}
 
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+h6 {
+  /* AS p2  */
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 a {
   color: inherit;
@@ -20,6 +58,88 @@ p {
 * {
   box-sizing: border-box;
 }
+
+
+
+
+/* BUTTON START */
+/* primary button */
+.btn {
+  border: 1px solid transparent;
+  background-color: var(--primary);
+  min-width: 60px;
+  min-height: 25px;
+  border-radius: var(--space1);
+  padding: var(--space1);
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: radial-gradient(circle, rgb(226, 224, 255) 0%, rgba(204, 247, 255, 1) 100%, rgb(255, 255, 255) 100%);
+  opacity: 1;
+
+}
+
+.btn:focus {
+  background-color: var(--secondary);
+}
+
+.btn:active {
+  background-color: var(--primary);
+}
+
+/* secondary button */
+.btn2 {
+  box-shadow: var(--box-shadow);
+  min-width: 60px;
+  min-height: 25px;
+  border-radius: var(--space1);
+  padding: var(--space1);
+  border: 1px solid;
+  opacity: 0.7;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn2:hover {
+  background: rgb(187, 183, 255);
+  background: radial-gradient(circle, rgb(226, 224, 255) 0%, rgba(204, 247, 255, 1) 100%, rgb(255, 255, 255) 100%);
+  opacity: 1;
+
+}
+
+.btn2:focus {
+  background-color: var(--secondary);
+}
+
+.btn2:active {
+  background-color: var(--primary);
+}
+
+.btn:hover {
+  background: rgb(187, 183, 255);
+  background: radial-gradient(circle, rgb(226, 224, 255) 0%, rgba(204, 247, 255, 1) 100%, rgb(255, 255, 255) 100%);
+  opacity: 1;
+
+}
+
+.btn:focus {
+  background-color: var(--secondary);
+}
+
+.btn:active {
+  background-color: var(--primary);
+}
+
+/* BUTTON END */
+
+
 
 :root {
   /* palette */
@@ -36,5 +156,5 @@ p {
   --space4: 32px;
   /*shadows */
   --box-shadow: var(--text-primary) 3px 2px 6px 0;
-  --box-shadow2: var(--text-primary) 6px 4px 12px 0;
+  --box-shadow2: var(--text-primary) 0px 0px 12px 0;
 }

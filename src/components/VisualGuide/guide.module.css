@@ -1,0 +1,48 @@
+
+/* VISUAL GUIDE START*/
+.guide {
+    min-height: 200px;
+    min-width: 200px;
+    padding: var(--space1);
+    border-radius: var(--space1);
+    box-shadow: var(--box-shadow2);
+    background-color: var(--text-secondary);
+    margin-top: 2rem;
+  }
+  
+  .guide__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 8px;
+    background-color: var(--disabled);
+  }
+  
+  .guide__grid_item {
+    background-color: #fff;
+    width: 100%;
+    min-height: 50px;
+    padding: var(--space1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    min-width: 60px;
+    min-height: 35px;
+    border: 1px solid var(--text-primary);
+    border-radius: var(--space1);
+    padding: var(--space1/2);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .guide {
+      margin-top: 4rem;
+    }
+    .guide__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  

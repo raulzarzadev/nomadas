@@ -1,0 +1,32 @@
+.section {
+    background-color: var(--primary);
+    box-shadow: var(--box-shadow2);
+    padding: var(--space2);
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.section__div {
+    background-color: var(--secondary);
+    min-height: 220px;
+    width: 80%;
+    margin: var(--space2) auto;
+    padding: var(--space1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (min-width: 600px) {
+    .section {
+        display: flex;
+        justify-content: space-around;
+        padding: var(--space2);
+    }
+
+    .section__div {
+        width: 20%;
+    }
+}
